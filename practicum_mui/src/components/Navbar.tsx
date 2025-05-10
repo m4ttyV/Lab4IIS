@@ -55,9 +55,11 @@ function Navbar({ active } : ComponentProps<any>) {
                                     Список зданий
                                 </Button>
                             </Link>
-                            <Button color="info" size="medium">
+                            <Link to="/chart">
+                              <Button sx={{ color: active === "3" ? "red" : "inherit" }}>
                                 Диаграммы
-                            </Button>
+                              </Button>
+                            </Link>
                             <IconButton aria-label="Menu button" onClick={toggleDrawer(true)}>
                                 <MenuIcon/>
                             </IconButton>

@@ -4,40 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5df82128-69bb-45b1-9c02-e9c4e3639f1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Lab4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/App.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/App.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/chart/Chart.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/chart/components/GroupChart.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/chart/components/GroupGrid.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/chart/groupdata.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/components/Navbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/data.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/list/List.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/list/components/BuildingsGrid.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/list/table.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/main/components/BuildCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/main/components/Content.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/main/components/Gallery.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/main/main.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/react-app-env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/reportWebVitals.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/setupTests.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/table.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum_mui/tsconfig.json" afterDir="false" />
+    <list default="true" id="5df82128-69bb-45b1-9c02-e9c4e3639f1c" name="Changes" comment="123">
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/chart/components/SettingChart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practicum_mui/src/chart/Chart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/chart/Chart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practicum_mui/src/chart/components/GroupChart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/chart/components/GroupChart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practicum_mui/src/chart/components/GroupGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/chart/components/GroupGrid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practicum_mui/src/chart/groupdata.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/chart/groupdata.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practicum_mui/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/components/Navbar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +19,25 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "m4ttyV"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/m4ttyV/Lab4IIS",
+    "accountId": "c86ef639-0cca-4812-8dd4-bf5d97866cb9"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -99,11 +90,32 @@
       <workItem from="1746854189215" duration="3214000" />
       <workItem from="1746862650044" duration="3901000" />
       <workItem from="1746872529452" duration="594000" />
-      <workItem from="1746915846910" duration="599000" />
+      <workItem from="1746915846910" duration="4422000" />
     </task>
+    <task id="LOCAL-00001" summary="123">
+      <option name="closed" value="true" />
+      <created>1746917472058</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746917472058</updated>
+    </task>
+    <task id="LOCAL-00002" summary="123">
+      <option name="closed" value="true" />
+      <created>1746917628271</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746917628271</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="123" />
+    <option name="LAST_COMMIT_MESSAGE" value="123" />
   </component>
 </project>
