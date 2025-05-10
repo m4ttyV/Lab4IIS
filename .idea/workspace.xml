@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5df82128-69bb-45b1-9c02-e9c4e3639f1c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Lab4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/App.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/chart/Chart.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/chart/components/GroupChart.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/chart/components/GroupGrid.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/chart/groupdata.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/components/Navbar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/data.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/list/List.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/list/components/BuildingsGrid.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/list/table.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/main/components/BuildCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/main/components/Content.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/main/components/Gallery.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/main/main.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/react-app-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/reportWebVitals.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/setupTests.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/table.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2vTDEKGEgkYOEL4TUoNPQ3MYA0H" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/glebm/PyCharmProjects/Lab4&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\glebm\\PyCharmProjects\\Lab4\\practicum_mui\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\glebm\PyCharmProjects\Lab4\practicum_mui\src\main\components" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.220" />
+        <option value="bundled-python-sdk-0fc6c617c4bd-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.220" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5df82128-69bb-45b1-9c02-e9c4e3639f1c" name="Changes" comment="" />
+      <created>1744160057878</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744160057878</updated>
+      <workItem from="1744160058913" duration="1140000" />
+      <workItem from="1744161262405" duration="6363000" />
+      <workItem from="1744175866781" duration="20000" />
+      <workItem from="1746854189215" duration="3214000" />
+      <workItem from="1746862650044" duration="3901000" />
+      <workItem from="1746872529452" duration="594000" />
+      <workItem from="1746915846910" duration="599000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
