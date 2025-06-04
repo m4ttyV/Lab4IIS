@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5df82128-69bb-45b1-9c02-e9c4e3639f1c" name="Changes" comment="123">
-      <change afterPath="$PROJECT_DIR$/practicum_mui/src/chart/components/SettingChart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practicum_mui/data/structure.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/practicum_mui/src/chart/Chart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/chart/Chart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/practicum_mui/src/chart/components/GroupChart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/chart/components/GroupChart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/practicum_mui/src/chart/components/GroupGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/chart/components/GroupGrid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practicum_mui/src/chart/components/SettingChart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/chart/components/SettingChart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/practicum_mui/src/chart/groupdata.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/chart/groupdata.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/practicum_mui/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/components/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practicum_mui/src/data.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/data.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practicum_mui/src/list/List.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/list/List.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practicum_mui/src/list/components/BuildingsGrid.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practicum_mui/src/list/table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/list/table.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practicum_mui/src/main/components/BuildCard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practicum_mui/src/main/components/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/main/components/Content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practicum_mui/src/main/components/Gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/main/components/Gallery.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practicum_mui/src/table.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,18 +35,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "m4ttyV"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;m4ttyV&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/m4ttyV/Lab4IIS",
-    "accountId": "c86ef639-0cca-4812-8dd4-bf5d97866cb9"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/m4ttyV/Lab4IIS&quot;,
+    &quot;accountId&quot;: &quot;c86ef639-0cca-4812-8dd4-bf5d97866cb9&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -47,26 +56,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/glebm/PyCharmProjects/Lab4&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\glebm\\PyCharmProjects\\Lab4\\practicum_mui\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/glebm/PyCharmProjects/untitled",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+    "ts.external.directory.path": "C:\\Users\\glebm\\PyCharmProjects\\Lab4\\practicum_mui\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\glebm\PyCharmProjects\Lab4\practicum_mui\src\main\components" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/practicum_mui/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -90,7 +112,11 @@
       <workItem from="1746854189215" duration="3214000" />
       <workItem from="1746862650044" duration="3901000" />
       <workItem from="1746872529452" duration="594000" />
-      <workItem from="1746915846910" duration="4422000" />
+      <workItem from="1746915846910" duration="4924000" />
+      <workItem from="1747004722614" duration="39000" />
+      <workItem from="1747708644057" duration="3438000" />
+      <workItem from="1748933591856" duration="1432000" />
+      <workItem from="1748962733570" duration="5504000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <option name="closed" value="true" />
@@ -108,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746917628271</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="123">
+      <option name="closed" value="true" />
+      <created>1746921417823</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746921417823</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -80,9 +80,9 @@ function Navbar({ active } : ComponentProps<any>) {
                                             <CloseRoundedIcon/>
                                         </IconButton>
                                     </Box>
-                                    <MenuItem> Главная </MenuItem>
-                                    <MenuItem>Список зданий</MenuItem>
-                                    <MenuItem>Диаграммы</MenuItem>
+                                    <Link to="/"><MenuItem>Главная</MenuItem></Link>
+                                    <Link to="/list"><MenuItem>Список зданий</MenuItem></Link>
+                                    <Link to="/chart"><MenuItem>Диаграммы</MenuItem></Link>
                                 </Box>
                             </Drawer>
                         </Box>

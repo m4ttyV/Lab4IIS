@@ -1,54 +1,59 @@
-import { useState } from "react";
-import Navbar from "../components/Navbar";
-import GroupGrid from "./components/GroupGrid";
-import { countries, years, types, tGroup } from "./groupdata"; // tGroup - массив объектов
-import {
-  Select,
-  SelectChangeEvent,
-  MenuItem,
-  FormControl,
-  InputLabel,
-  Container,
-} from "@mui/material";
+import { Box, Container, FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from '@mui/material';
+import Navbar from '../components/Navbar';
+import GroupGrid from './components/GroupGrid';
+import GroupChart from './components/GroupChart';
+import { countries, states, cities } from './groupdata';
+import React from 'react';
+
+type GroupByOption = 'Страна' | 'Штат' | 'Город';
 
 export default function Chart() {
-  const [group, setGroup] = useState<"Страна" | "Год" | "Тип">("Страна");
+    const [group, setGroup] = React.useState<GroupByOption>('Страна');
+    const [groupData, setGroupData] = React.useState(countries);
 
-  // groupData должен быть массивом типа tGroup[]
-  const [groupData, setGroupData] = useState<tGroup>(countries); // countries - это массив данных
+    const handleChange = (event: SelectChangeEvent<GroupByOption>) => {
+        const value = event.target.value as GroupByOption;
+        setGroup(value);
 
-  const handleChange = (event: SelectChangeEvent) => {
-    const selectedGroup = event.target.value as "Страна" | "Год" | "Тип";
-    setGroup(selectedGroup);
+        switch(value) {
+            case 'Страна':
+                setGroupData(countries);
+                break;
+            case 'Штат':
+                setGroupData(states);
+                break;
+            case 'Город':
+                setGroupData(cities);
+                break;
+            default:
+                setGroupData(countries);
+        }
+    };
 
-    // Обновляем данные в зависимости от выбранной группировки
-    switch (selectedGroup) {
-      case "Страна":
-        setGroupData(countries); // countries - это массив объектов типа tGroup
-        break;
-      case "Год":
-        setGroupData(years); // years - это массив объектов типа tGroup
-        break;
-      case "Тип":
-        setGroupData(types); // types - это массив объектов типа tGroup
-        break;
-    }
-  };
+    return (
+        <>
+            <Navbar active="3" />
+            <Container maxWidth="lg" sx={{ py: 4 }}>
+                <Box sx={{ width: 200, mb: 4 }}>
+                    <FormControl fullWidth>
+                        <InputLabel>Группировать по</InputLabel>
+                        <Select
+                            id="select-group"
+                            value={group}
+                            label="Группировать по"
+                            onChange={handleChange}
+                        >
+                            <MenuItem value="Страна">Стране</MenuItem>
+                            <MenuItem value="Штат">Штату</MenuItem>
+                            <MenuItem value="Город">Городу</MenuItem>
+                        </Select>
+                    </FormControl>
+                </Box>
 
-  return (
-    <div>
-      <Navbar active="3" /> {/* "Диаграммы" — третий пункт меню */}
-      <Container maxWidth="lg" sx={{ mt: 4 }}>
-        <FormControl sx={{ width: 200, mb: 2 }}>
-          <InputLabel>Группировать по</InputLabel>
-          <Select value={group} onChange={handleChange} label="Группировать по">
-            <MenuItem value="Страна">Стране</MenuItem>
-            <MenuItem value="Год">Году</MenuItem>
-            <MenuItem value="Тип">Типу</MenuItem>
-          </Select>
-        </FormControl>
-        <GroupGrid data={groupData} /> {/* Передаем массив данных */}
-      </Container>
-    </div>
-  );
+                {/* Добавляем компонент диаграммы перед таблицей */}
+                <GroupChart data={groupData} />
+                <GroupGrid data={groupData} />
+            </Container>
+        </>
+    );
 }

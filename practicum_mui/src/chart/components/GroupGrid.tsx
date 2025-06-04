@@ -1,32 +1,31 @@
-// components/GroupGrid.tsx
-import { DataGrid, GridColDef, GridInitialState } from "@mui/x-data-grid";
-import { tGroup } from "../groupdata";
+import { DataGrid, GridColDef } from '@mui/x-data-grid';
+import { tGroup } from '../groupdata';
+
+const columns: GridColDef[] = [
+    { field: 'group', headerName: 'Группа', width: 150 },
+    { field: 'minDuration', headerName: 'Минимальная продолжительность', width: 180, type: 'number' },
+    { field: 'avgDuration', headerName: 'Максимальная продолжительность', width: 180, type: 'number' },
+    { field: 'maxDuration', headerName: 'Средняя продолжительность', width: 180, type: 'number' },
+];
 
 type GroupProps = {
-  data: tGroup[];
+    data: tGroup;
 };
 
 export default function GroupGrid({ data }: GroupProps) {
-  const columns: GridColDef[] = [
-    { field: "Группа", headerName: "Группа", flex: 1 },
-    { field: "Минимальная высота", headerName: "Минимальная высота" },
-    { field: "Максимальная высота", headerName: "Максимальная высота" },
-    { field: "Средняя высота", headerName: "Средняя высота" },
-  ];
-
-  // Корректный тип для initialState
-  const initialState: GridInitialState = {
-    pagination: {
-      paginationModel: { pageSize: 10 },
-    },
-  };
-
-  return (
-    <DataGrid
-      rows={data}
-      columns={columns}
-      autoHeight
-      initialState={initialState} // Передаем объект с правильным типом
-    />
-  );
+    return (
+        <div style={{ height: 600, width: '100%' }}>
+            <DataGrid
+                rows={data}
+                columns={columns}
+                initialState={{
+                    pagination: {
+                        paginationModel: { pageSize: 10 },
+                    },
+                }}
+                pageSizeOptions={[10]}
+                disableRowSelectionOnClick
+            />
+        </div>
+    );
 }

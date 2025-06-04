@@ -10,11 +10,12 @@ const imgData=structures.slice(0, -1);
 function Gallery() {
   return (
 <Container maxWidth="lg">
-      <Box sx={{width: 800, height: 585, overflowY: 'scroll', m: '20px auto'}}>
-        <ImageList variant="masonry" cols={ 4 } gap={ 8 }>
+      <Box sx={{width: 900, height: 480, overflowY: 'scroll', m: '20px auto'}}>
+        <ImageList variant="quilted" cols={ 5 } gap={ 5 } >
           {imgData.map((item) => (
             <ImageListItem key={item.img}>
               <img
+
                 srcSet={ item.img }
                 src={ item.img }
                 alt={ item.title }

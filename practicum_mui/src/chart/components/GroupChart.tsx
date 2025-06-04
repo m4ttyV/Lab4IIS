@@ -1,53 +1,83 @@
-import { BarChart } from '@mui/x-charts/BarChart';
+import { BarChart, LineChart } from '@mui/x-charts';
 import Container from '@mui/material/Container';
-import {axisClasses} from "@mui/x-charts";
-import React from "react";
-import { LineChart } from '@mui/x-charts/LineChart';
-import SettingChart from "./SettingChart";
+import { tGroup } from '../groupdata';
+import React from 'react';
+import SettingChart from './SettingChart';
 
-function GroupChart({ data }: { data: any[] }) {
-  const [isBar, setIsBar] = React.useState(true); // Состояние для переключения между типами диаграмм
+type GroupChartProps = {
+    data: tGroup;
+};
 
-  const chartSetting = {
-    yAxis: [{ label: 'Высота(м)' }],
-    height: 500,
-    sx: {
-      [`.${axisClasses.left} .${axisClasses.label}`]: {
-        transform: 'translate(-10px, 0)',
-      },
-    },
-  };
+export default function GroupChart({ data }: GroupChartProps) {
+    const [seriesState, setSeriesState] = React.useState({
+        'maxDuration': true,
+        'avgDuration': false,
+        'minDuration': false,
+    });
+    const [isBar, setIsBar] = React.useState(true);
 
-  return (
-    <Container maxWidth="lg">
-      {/* Ваш компонент управления типами диаграмм */}
-      <SettingChart isBar={isBar} setIsBar={setIsBar} />
+    const chartSetting = {
+        yAxis: [
+            {
+                label: 'Продолжительность',
+            },
+        ],
+        height: 500,
+        margin: { left: 70, bottom: 100 },
+        sx: {
+            [`& .MuiChartsAxis-left .MuiChartsAxis-label`]: {
+                transform: 'translate(-10px, 0)',
+            },
+        },
+    };
 
-      {isBar ? (
-        <BarChart
-          dataset={data} // Данные для диаграммы
-          xAxis={[{ scaleType: 'band', dataKey: 'Группа' }]} // Группировка по оси X
-          series={[
-            { dataKey: 'Максимальная высота', label: 'Максимальная высота' },
-            { dataKey: 'Средняя высота', label: 'Средняя высота' },
-            { dataKey: 'Минимальная высота', label: 'Минимальная высота' },
-          ]}
-          {...chartSetting}
-        />
-      ) : (
-        <LineChart
-          dataset={data} // Данные для линейной диаграммы
-          xAxis={[{ scaleType: 'band', dataKey: 'Группа' }]}
-          series={[
-            { dataKey: 'Максимальная высота', label: 'Максимальная высота' },
-            { dataKey: 'Средняя высота', label: 'Средняя высота' },
-            { dataKey: 'Минимальная высота', label: 'Минимальная высота' },
-          ]}
-          {...chartSetting}
-        />
-      )}
-    </Container>
-  );
+    const series = Object.entries(seriesState)
+        .filter(([_, visible]) => visible)
+        .map(([key, _]) => ({
+            dataKey: key,
+            label: key,
+            valueFormatter: (value: number | null) => value ? `${value} м` : '',
+            ...(Object.values(seriesState).filter(Boolean).length === 1
+                ? { barLabel: 'value' as const }
+                : {})
+        }));
+
+    return (
+        <Container maxWidth="lg" sx={{ mb: 4 }}>
+            {isBar ? (
+                <BarChart
+                    dataset={data}
+                    xAxis={[{ scaleType: 'band', dataKey: 'Группа' }]}
+                    series={series}
+                    colors={['#ff7043', '#6bbf59', '#5d8aa8']}
+                    slotProps={{
+                        legend: {
+                            position: { vertical: 'bottom', horizontal: 'center' },
+                        },
+                    }}
+                    {...chartSetting}
+                />
+            ) : (
+                <LineChart
+                    dataset={data}
+                    xAxis={[{ scaleType: 'band', dataKey: 'Группа' }]}
+                    series={series}
+                    colors={['#ff7043', '#6bbf59', '#5d8aa8']}
+                    slotProps={{
+                        legend: {
+                            position: { vertical: 'bottom', horizontal: 'center' },
+                        },
+                    }}
+                    {...chartSetting}
+                />
+            )}
+
+            <SettingChart
+                series={seriesState}
+                setSeries={setSeriesState}
+                isBar={isBar}
+                setIsBar={setIsBar}
+            />
+        </Container>
+    );
 }
-
-export default GroupChart;
