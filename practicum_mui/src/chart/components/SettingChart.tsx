@@ -9,9 +9,9 @@ import Divider from '@mui/material/Divider';
 import React from 'react';
 
 type SeriesState = {
-    'maxDuration': boolean;
-    'avgDuration': boolean;
-    'minDuration': boolean;
+    'Максимальная продолжительность': boolean;
+    'Средняя продолжительность': boolean;
+    'Минимальная продолжительность': boolean;
 };
 
 type SettingChartProps = {
@@ -46,7 +46,7 @@ export default function SettingChart({
             spacing={2}
             sx={{ m: "20px 0" }}
         >
-            <FormControl component="fieldset">
+           <FormControl component="fieldset">
                 <FormLabel component="legend">Тип диаграммы:</FormLabel>
                 <RadioGroup
                     name="chart-type-group"
@@ -71,7 +71,7 @@ export default function SettingChart({
                 <FormControlLabel
                     control={
                         <Checkbox
-                            checked={series['maxDuration']}
+                            checked={series['Максимальная продолжительность']}
                             onChange={handleSeriesChange}
                             name="Максимальная продолжительность"
                         />
@@ -81,7 +81,7 @@ export default function SettingChart({
                 <FormControlLabel
                     control={
                         <Checkbox
-                            checked={series['avgDuration']}
+                            checked={series['Средняя продолжительность']}
                             onChange={handleSeriesChange}
                             name="Средняя продолжительность"
                         />
@@ -91,7 +91,7 @@ export default function SettingChart({
                 <FormControlLabel
                     control={
                         <Checkbox
-                            checked={series['minDuration']}
+                            checked={series['Минимальная продолжительность']}
                             onChange={handleSeriesChange}
                             name="Минимальная продолжительность"
                         />

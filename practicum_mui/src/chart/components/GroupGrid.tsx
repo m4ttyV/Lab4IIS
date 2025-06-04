@@ -2,10 +2,10 @@ import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { tGroup } from '../groupdata';
 
 const columns: GridColDef[] = [
-    { field: 'group', headerName: 'Группа', width: 150 },
-    { field: 'minDuration', headerName: 'Минимальная продолжительность', width: 180, type: 'number' },
-    { field: 'avgDuration', headerName: 'Максимальная продолжительность', width: 180, type: 'number' },
-    { field: 'maxDuration', headerName: 'Средняя продолжительность', width: 180, type: 'number' },
+    { field: 'Группа', headerName: 'Группа', width: 150 },
+    { field: 'Минимальная продолжительность', headerName: 'Минимальная продолжительность', width: 180, type: 'number' },
+    { field: 'Максимальная продолжительность', headerName: 'Максимальная продолжительность', width: 180, type: 'number' },
+    { field: 'Средняя продолжительность', headerName: 'Средняя продолжительность', width: 180, type: 'number' },
 ];
 
 type GroupProps = {

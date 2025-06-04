@@ -10,9 +10,9 @@ type GroupChartProps = {
 
 export default function GroupChart({ data }: GroupChartProps) {
     const [seriesState, setSeriesState] = React.useState({
-        'maxDuration': true,
-        'avgDuration': false,
-        'minDuration': false,
+        'Максимальная продолжительность': true,
+        'Средняя продолжительность': false,
+        'Минимальная продолжительность': false,
     });
     const [isBar, setIsBar] = React.useState(true);
 
@@ -36,7 +36,7 @@ export default function GroupChart({ data }: GroupChartProps) {
         .map(([key, _]) => ({
             dataKey: key,
             label: key,
-            valueFormatter: (value: number | null) => value ? `${value} м` : '',
+            valueFormatter: (value: number | null) => value ? `${value} с` : '',
             ...(Object.values(seriesState).filter(Boolean).length === 1
                 ? { barLabel: 'value' as const }
                 : {})

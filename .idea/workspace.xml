@@ -5,22 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5df82128-69bb-45b1-9c02-e9c4e3639f1c" name="Changes" comment="123">
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/list/ListAll.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum_mui/src/list/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practicum_mui/data/structure.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practicum_mui/src/chart/Chart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/chart/Chart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/practicum_mui/src/chart/components/GroupChart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/chart/components/GroupChart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/practicum_mui/src/chart/components/GroupGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/chart/components/GroupGrid.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/practicum_mui/src/chart/components/SettingChart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/chart/components/SettingChart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/practicum_mui/src/chart/groupdata.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/chart/groupdata.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/practicum_mui/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/components/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practicum_mui/src/data.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/data.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practicum_mui/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/practicum_mui/src/list/List.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/list/List.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practicum_mui/src/list/components/BuildingsGrid.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/practicum_mui/src/list/table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/list/table.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practicum_mui/src/main/components/BuildCard.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practicum_mui/src/main/components/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/main/components/Content.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/practicum_mui/src/main/components/Gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/main/components/Gallery.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practicum_mui/src/table.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practicum_mui/src/main/components/SightingsCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/practicum_mui/src/main/components/SightingsCard.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +113,7 @@
       <workItem from="1747004722614" duration="39000" />
       <workItem from="1747708644057" duration="3438000" />
       <workItem from="1748933591856" duration="1432000" />
-      <workItem from="1748962733570" duration="5504000" />
+      <workItem from="1748962733570" duration="17813000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <option name="closed" value="true" />
@@ -142,7 +139,23 @@
       <option name="project" value="LOCAL" />
       <updated>1746921417823</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="123">
+      <option name="closed" value="true" />
+      <created>1749001701967</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1749001701967</updated>
+    </task>
+    <task id="LOCAL-00005" summary="123">
+      <option name="closed" value="true" />
+      <created>1749001789122</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749001789122</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

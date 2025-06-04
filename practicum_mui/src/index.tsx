@@ -8,7 +8,9 @@ import {
 } from "react-router-dom";
 import Main from './main/main';
 import List from "./list/List";
+import ListAll from "./list/ListAll";
 import Chart from "./chart/Chart"
+
 
 const router = createBrowserRouter([
   {
@@ -16,8 +18,12 @@ const router = createBrowserRouter([
     element: <Main />,
   },
   {
-    path: "/list",
+    path: "/list/:id",
     element: <List />,
+  },
+  {
+    path: "/list/",
+    element: <ListAll />,
   },
   {
     path: "/chart",

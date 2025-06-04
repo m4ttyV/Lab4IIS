@@ -46,17 +46,17 @@ function Navbar({ active } : ComponentProps<any>) {
                         </Typography>
                         <Box sx={{display: {xs: 'none', md: 'flex'}}}>
                             <Link to="/">
-                                <Button variant="contained" color="info" size="medium">
+                                <Button color="info" size="medium"  sx={{ color: active === "1" ? "blueviolet" : "inherit" }}>
                                     Главная
                                 </Button>
                             </Link>
                             <Link to="/list">
-                                <Button color="info" size="medium">
-                                    Список зданий
+                                <Button color="info" size="medium" sx={{ color: active === "2" ? "blueviolet" : "inherit" }}>
+                                    Список всех наблюдений
                                 </Button>
                             </Link>
                             <Link to="/chart">
-                              <Button sx={{ color: active === "3" ? "red" : "inherit" }}>
+                              <Button  color="info" size="medium" sx={{ color: active === "3" ? "blueviolet" : "inherit" }}>
                                 Диаграммы
                               </Button>
                             </Link>
