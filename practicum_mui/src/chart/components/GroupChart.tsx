@@ -1,20 +1,19 @@
-import { BarChart, LineChart } from '@mui/x-charts';
+import { BarChart } from '@mui/x-charts/BarChart';
 import Container from '@mui/material/Container';
-import { tGroup } from '../groupdata';
-import React from 'react';
-import SettingChart from './SettingChart';
+import { axisClasses } from "@mui/x-charts";
+import React from "react";
+import { LineChart } from '@mui/x-charts/LineChart';
+import SettingChart from "./SettingChart";
 
-type GroupChartProps = {
-    data: tGroup;
-};
-
-export default function GroupChart({ data }: GroupChartProps) {
-    const [seriesState, setSeriesState] = React.useState({
-        'Максимальная продолжительность': true,
-        'Средняя продолжительность': false,
-        'Минимальная продолжительность': false,
-    });
+function GroupChart({ data }: { data: any[] }) {
     const [isBar, setIsBar] = React.useState(true);
+
+    const [seriesState, setSeriesState] = React.useState(
+        {
+            'Максимальная продолжительность': true,
+            'Средняя продолжительность': false,
+            'Минимальная продолжительность': false,
+        });
 
     const chartSetting = {
         yAxis: [
@@ -31,53 +30,38 @@ export default function GroupChart({ data }: GroupChartProps) {
         },
     };
 
-    const series = Object.entries(seriesState)
-        .filter(([_, visible]) => visible)
-        .map(([key, _]) => ({
-            dataKey: key,
-            label: key,
-            valueFormatter: (value: number | null) => value ? `${value} с` : '',
-            ...(Object.values(seriesState).filter(Boolean).length === 1
-                ? { barLabel: 'value' as const }
-                : {})
-        }));
+    const availableSeries = [
+          seriesState['Максимальная продолжительность'] && { dataKey: 'max_duration', label: 'Максимальная продолжительность' },
+          seriesState['Средняя продолжительность'] && { dataKey: 'avg_duration', label: 'Средняя продолжительность' },
+          seriesState['Минимальная продолжительность'] && { dataKey: 'min_duration', label: 'Минимальная продолжительность' },
+        ].filter(Boolean) as { dataKey: string; label: string }[];
 
     return (
-        <Container maxWidth="lg" sx={{ mb: 4 }}>
-            {isBar ? (
-                <BarChart
-                    dataset={data}
-                    xAxis={[{ scaleType: 'band', dataKey: 'Группа' }]}
-                    series={series}
-                    colors={['#ff7043', '#6bbf59', '#5d8aa8']}
-                    slotProps={{
-                        legend: {
-                            position: { vertical: 'bottom', horizontal: 'center' },
-                        },
-                    }}
-                    {...chartSetting}
-                />
-            ) : (
-                <LineChart
-                    dataset={data}
-                    xAxis={[{ scaleType: 'band', dataKey: 'Группа' }]}
-                    series={series}
-                    colors={['#ff7043', '#6bbf59', '#5d8aa8']}
-                    slotProps={{
-                        legend: {
-                            position: { vertical: 'bottom', horizontal: 'center' },
-                        },
-                    }}
-                    {...chartSetting}
-                />
-            )}
-
+        <Container maxWidth="lg">
             <SettingChart
                 series={seriesState}
                 setSeries={setSeriesState}
                 isBar={isBar}
                 setIsBar={setIsBar}
             />
+
+           {isBar ? (
+              <BarChart
+                dataset={data}
+                xAxis={[{ scaleType: 'band', dataKey: 'group' }]}
+                series={availableSeries}
+                {...chartSetting}
+              />
+           ) : (
+           <LineChart
+           dataset={data}
+           xAxis={[{ scaleType: 'band', dataKey: 'group' }]}
+           series={availableSeries}
+           {...chartSetting}
+                />
+           )}
         </Container>
     );
 }
+
+export default GroupChart;

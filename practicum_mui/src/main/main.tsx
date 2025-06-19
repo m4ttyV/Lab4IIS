@@ -3,14 +3,13 @@ import Gallery from "./components/Gallery";
 import Content from "./components/Content";
 
 function Main() {
-  return (
-    <div>
-      {/*<Navbar active="1"/>*/}
-        <Navbar></Navbar>
-      <Gallery/>
-      <Content/>
-    </div>
-  );
+    return (
+        <div>
+            <Navbar active="1"></Navbar>
+            <Gallery/>
+            <Content/>
+        </div>
+    );
 }
 
 export default Main;

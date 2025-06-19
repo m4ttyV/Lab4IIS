@@ -46,7 +46,7 @@ export default function SettingChart({
             spacing={2}
             sx={{ m: "20px 0" }}
         >
-           <FormControl component="fieldset">
+            <FormControl component="fieldset">
                 <FormLabel component="legend">Тип диаграммы:</FormLabel>
                 <RadioGroup
                     name="chart-type-group"

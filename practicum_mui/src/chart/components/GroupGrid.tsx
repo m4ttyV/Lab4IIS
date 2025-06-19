@@ -1,31 +1,43 @@
-import { DataGrid, GridColDef } from '@mui/x-data-grid';
-import { tGroup } from '../groupdata';
+import * as React from 'react';
+import { Table, TableBody, TableCell, TableHead, TableRow, Paper, TableContainer } from '@mui/material';
 
-const columns: GridColDef[] = [
-    { field: 'Группа', headerName: 'Группа', width: 150 },
-    { field: 'Минимальная продолжительность', headerName: 'Минимальная продолжительность', width: 180, type: 'number' },
-    { field: 'Максимальная продолжительность', headerName: 'Максимальная продолжительность', width: 180, type: 'number' },
-    { field: 'Средняя продолжительность', headerName: 'Средняя продолжительность', width: 180, type: 'number' },
-];
 
-type GroupProps = {
-    data: tGroup;
-};
+interface GroupGridProps {
+    data: {
+    id: number;
+    group: string;
+    min_duration: number;
+    avg_duration: number;
+    max_duration: number;
+}[];
+}
 
-export default function GroupGrid({ data }: GroupProps) {
+export default function GroupGrid({ data }: GroupGridProps) {
     return (
-        <div style={{ height: 600, width: '100%' }}>
-            <DataGrid
-                rows={data}
-                columns={columns}
-                initialState={{
-                    pagination: {
-                        paginationModel: { pageSize: 10 },
-                    },
-                }}
-                pageSizeOptions={[10]}
-                disableRowSelectionOnClick
-            />
-        </div>
+        <TableContainer component={Paper} sx={{ mt: 4 }}>
+            <Table>
+                <TableHead>
+                    <TableRow>
+                        <TableCell>ID</TableCell>
+                        <TableCell>Группа</TableCell>
+                        <TableCell>Минимальная продолжительность</TableCell>
+                        <TableCell>Средняя продолжительность</TableCell>
+                        <TableCell>Максимальная продолжительность</TableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {data.map(row => (
+                        <TableRow key={row.id}>
+                            <TableCell>{row.id}</TableCell>
+                            <TableCell>{row.group}</TableCell>
+                            <TableCell>{row.min_duration}</TableCell>
+                            <TableCell>{row.avg_duration}</TableCell>
+                            <TableCell>{row.max_duration}</TableCell>
+                        </TableRow>
+                    ))}
+                </TableBody>
+            </Table>
+        </TableContainer>
     );
 }
+
